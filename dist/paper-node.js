@@ -7431,7 +7431,7 @@ statics: {
 			addJoin(segments[i], join);
 		if (closed) {
 			addJoin(segments[0], join);
-		} else {
+		} else if (length > 0) {
 			addCap(segments[0], cap);
 			addCap(segments[segments.length - 1], cap);
 		}
